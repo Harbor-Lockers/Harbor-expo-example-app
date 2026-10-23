@@ -1,12 +1,16 @@
+/**
+ * Copy this file to `credentials.ts` (that name is git-ignored) and fill in
+ * your values. `npm install` creates the copy for you if it is missing.
+ */
 const Config = {
-    CLIENT_ID: '', // fill with your client id, it should be something like a name
-    CLIENT_SECRET: '', // fill with your client secret, it should be a long string of numbers and letters
-    SDK_ENV: '', // either sandbox, development, or production. Case sensitive, all lowercase.
-    MY_TOWER_ID: '', // fill with your tower id, it should be a 16 hexadecimal digit id
-  };
-  
-  export default Config;
-  /*
-  Put your credentials into this file and change the name of this file to credentials.js
-  if you don't change the file name it will not work.
-  */
+  /** Your Harbor client id. Looks like a name. */
+  CLIENT_ID: '',
+  /** Your Harbor client secret. A long string of letters and digits. */
+  CLIENT_SECRET: '',
+  /** One of "sandbox", "development" or "production" (lowercase). */
+  SDK_ENV: 'sandbox',
+  /** The tower you want to talk to: 16 hexadecimal characters, e.g. "0123456789ABCDEF". */
+  MY_TOWER_ID: '',
+};
+
+export default Config;

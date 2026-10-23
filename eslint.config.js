@@ -7,4 +7,9 @@ module.exports = defineConfig([
   {
     ignores: ['dist/*'],
   },
+  {
+    // Plain Node scripts (run by npm / Expo CLI, not bundled into the app).
+    files: ['scripts/**/*.js', 'plugins/**/*.js'],
+    languageOptions: { globals: { __dirname: 'readonly', require: 'readonly', module: 'readonly', process: 'readonly' } },
+  },
 ]);
